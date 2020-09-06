@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% File: utthesis2.doc, version 2.0jab, February 2002
+%%%
+%%% Based on: utthesis.doc, version 2.0, January 1995
+%%% =============================================
+%%% Copyright (c) 1995 by Dinesh Das.  All rights reserved.
+%%% This file is free and can be modified or distributed as long as
+%%% you meet the following conditions:
+%%%
+%%% (1) This copyright notice is kept intact on all modified copies.
+%%% (2) If you modify this file, you MUST NOT use the original file name.
+%%%
+%%% This file contains a template that can be used with the package
+%%% utthesis.sty and LaTeX2e to produce a thesis that meets the requirements
+%%% of the Graduate School of The University of Texas at Austin.
+%%%
+%%% All of the commands defined by utthesis.sty have default values (see
+%%% the file utthesis.sty for these values).  Thus, theoretically, you
+%%% don't need to define values for any of them; you can run this file
+%%% through LaTeX2e and produce an acceptable thesis, without any text.
+%%% However, you probably want to set at least some of the macros (like
+%%% \thesisauthor).  In that case, replace "..." with appropriate values,
+%%% and uncomment the line (by removing the leading %'s).
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%
+%% This file, and the corresponding tcdthesis.sty the accompanied it, have
+%% been modified for the M.Sc. styles used in Trinity College, Dublin
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper, 12pt, oneside]{report}         %% LaTeX2e document.
+\usepackage {tcdthesis}              %% Preamble.
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\graphicspath{ {./images/} }
+\mastersthesis                     %% Uncomment one of these; if you don't
+% \phdthesis                         %% use either, the default is \phdthesis.
+
+%%\thesisdraft                       %% Uncomment this if you want a draft
+                                     %% version; this will print a timestamp
+                                     %% on each page of your thesis.
+
+\leftchapter                       %% Uncomment one of these if you want
+%\centerchapter                      %% left-justified, centered or
+% \rightchapter                      %% right-justified chapter headings.
+                                     %% Chapter headings includes the
+                                     %% Contents, Acknowledgments, Lists
+                                     %% of Tables and Figures and the Vita.
+                                     %% The default is \centerchapter.
+
+% \singlespace                       %% Uncomment one of these if you want
+\oneandhalfspace                   %% single-spacing, space-and-a-half
+% \doublespace                       %% or double-spacing; the default is
+                                     %% \oneandhalfspace, which is the
+                                     %% minimum spacing accepted by the
+                                     %% Graduate School.
+
+\renewcommand{\thesisauthor}{Divyanshu Marwah}            %% Your official TCD name.
+\renewcommand{\thesismonth}{September}                  %% Your month of graduation.
+\renewcommand{\thesisyear}{2020}                      %% Your year of graduation.
+\renewcommand{\thesistitle}{Term Recency for TF-IDF, BM25 and USE Term Weighting}            %% The title of your thesis; use mixed-case.
+\renewcommand{\thesisauthorpreviousdegrees}{}  %% Your previous degrees, abbreviated; separate multiple degrees by commas.
+\renewcommand{\thesissupervisor}{Dr Joeran Beel}      %% Your thesis supervisor; use mixed-case and don't use any titles or degrees.
+% \renewcommand{\thesiscosupervisor}{}                %% Your PhD. thesis co-supervisor; if any.
+
+% \renewcommand{\thesiscommitteemembera}{}
+% \renewcommand{\thesiscommitteememberb}{}
+% \renewcommand{\thesiscommitteememberc}{}
+% \renewcommand{\thesiscommitteememberd}{}
+% \renewcommand{\thesiscommitteemembere}{}
+% \renewcommand{\thesiscommitteememberf}{}
+% \renewcommand{\thesiscommitteememberg}{}
+% \renewcommand{\thesiscommitteememberh}{}
+% \renewcommand{\thesiscommitteememberi}{}
+
+
+\renewcommand{\thesisauthoraddress}{}
+
+\renewcommand{\thesisdedication}{...}     %% Your dedication, if you have one; use "\\" for linebreaks.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% The following commands are all optional, but useful if your requirements
+%%% are different from the default values in tcdthesis.sty.  To use them,
+%%% simply uncomment (remove the leading %) the line(s).
+
+\renewcommand{\thesisdegree}{Master of Science in Computer Science}  
+                                     %% default is "DOCTOR OF PHILOSOPHY"
+                                     %% for \phdthesis or "MASTER OF ARTS"
+                                     %% for \mastersthesis.  Provide the
+                                     %% correct FULL OFFICIAL name of
+                                     %% the degree.
+\renewcommand{\thesisdegreestream}{ (Data Science)}
+                                     %% Default is empty. This is used on
+                                     %% the title page of the thesis.
+
+\renewcommand{\thesisdegreeabbreviation}{M.Sc.}
+                                     %% Use this if you also use the above
+                                     %% command; provide the OFFICIAL
+                                     %% abbreviation of your thesis degree.
+\renewcommand{\thesistype}{Dissertation}    %% Use this ONLY if your thesis type
+                                     %% is NOT "Thesis" for \phdthesis
+                                     %% or \mastersthesis.
+                                     %% Provide the OFFICIAL type of the
+                                     %% thesis; use mixed-case.
+
+% \renewcommand{\thesistypist}{...}  %% Use this to specify the name of
+                                     %% the thesis typist if it is anything
+                                     %% other than "the author".
+
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}                                  %% BEGIN THE DOCUMENT
+
+\thesistitlepage                                  %% Generate the title page.
+
+\thesisdeclarationpage                %% Generate the declaration page.
+
+\thesispermissionpage                 %% Generate the copyright permission page
+
+%\thesisdedicationpage                             %% Generate the dedication page.
+
+\begin{thesisacknowledgments}                     %% Use this to write your %% acknowledgments; it can be anything
+Firstly, I would like to thank my parents and my family, who supported me in this endeavour.
+
+Secondly, I would like to thank my supervisor Professor Dr Joeran Beel, who provided me with valuable insight and advice throughout the process of working on this research.
+
+Lastly, I would like to thank Sneha Srivastava, Rachit Rastogi and Shivam Khanduri for their comments, suggestions and feedback.                    
+\end{thesisacknowledgments}                       %% allowed in LaTeX2e par-mode.
+
+\begin{thesisabstract}                          %% the abstract for your thesis
+ABSTRACT
+
+Effectiveness of a recommendation in an Information Retrieval (IR) system is determined by relevancy scores of retrieved results. Term weighting is responsible for computing the relevance scores and consequently differentiating between the terms in a document. However, current term weighting formula like TF-IDF weighs terms only based on term frequency and inverse document frequency irrespective of other important factors. This results in uncertainty in cases when both TF and IDF values are the same for more than one document resulting in same term weight values and hence unable to segregate the terms based on other crucial factors. In this research, we propose a modification of TF-IDF and other term-weighting schemes that weights terms additionally based on the recency of a term, i.e. metric based on the year the term occurred for the first time and the document frequency. We modified the term weighting schemes TF-IDF, BM25 and Universal Sentence Encoder (USE) to additionally consider the recency of a term and evaluated them on three datasets. Our modified TF-IDF outperformed the standard TF-IDF on all three datasets; the improvised USE model outperformed the standard USE on two of the three datasets; the modified BM25 did not perform well against the classic BM25 term-weighting scheme.
+
+\end{thesisabstract}
+
+\begin{thesissummary}                           %% The summary page for your thesis
+The study is based on the study of the time parameter in search relevance and its significance in existing term weighting methodologies. All the existing term weighting approaches calculate term weight based only on the frequency distributions without contemplating the diverse contexts of different terms. With this research, we introduce a term age, which will consider the time-based context for enhancing the search results and recommendations.
+
+Previous studies have focused on different aspects of term weighting like term distribution, the pattern of occurrences, IDF formulation, etc., but none of them has worked on the term age aspect of the terms. There have been some researches, based on time-aware recommendations and user modelling. In this research, we have tried to bunch up these concepts and formulated a new term age formulation and time normalized term weighting schemes.
+
+We have used three different datasets of different domains, that is, news, web answer passages and research paper recommendations. Some set of queries and expected set of results are given for the selected datasets, that are considered as the gold standard for evaluating the performance of different models. 
+These different datasets are indexed using Elasticsearch and defining different term weighting schemes to be used. Six different term weighting schemes have been implemented in this research comprising of, two standard methodologies, that is, TF-IDF, BM25, and their respective time normalized variants. And an advanced text embedding model, Universal Sentence Encoder and its time normalized variant.
+
+The problem is formulated as the information retrieval or search problem for the given set of queries. The results retrieved are evaluated in an aggregated form by using precision, recall, F1 and NDCG metrics. In 2 out of 3 algorithms, our term-recency modification improved the performance notably. When measured by p@10, time normalized TF-IDF outperformed TF-IDF by an average 47\% and time normalized USE outperformed USE in 2 of the 3 datasets by average 14.3\% but performed 50\% worse in the other dataset. The time normalized BM25 version, however, performed an average 32\% worse than BM25. NDCG@10 also leads to similar results.
+
+\end{thesissummary}
+
+
+\tableofcontents                                  %% Generate table of contents.
+\listoftables                                     %% Uncomment this to generate list of tables.
+\listoffigures                                    %% Uncomment this to generate list of figures.
+
+%%
+%% Include thesis chapters here...
+%%
+  \include{chapter1}
+  \include{chapter2}
+  \include{chapter3}
+  \include{chapter4}
+  \include{chapter5}
+  \include{chapter6}
+  \include{chapter7}
+  \include{chapter8}
+
+%\begin{thebibliography}{refs}                   %% Start your bibliography here; you can
+\bibliographystyle{ieeetr}
+\bibliography{refs}                               %% also use the \bibliography command
+%\end{thebibliography}                             %% to generate your bibliography.
+
+
+%\addcontentsline {toc}{chapter}{Appendices}       %% Force Appendices to appear in contents
+%\begin{appendix}
+% \include{appendix1}
+% \include{appendix2}
+% \end{appendix}
+
+
+%\addcontentsline {toc}{chapter}{Bibliography}     %% Force Bibliography to appear in contents
+
+
+\end{document}                                    %% END THE DOCUMENT
