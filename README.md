@@ -10,7 +10,8 @@ Dataset used - https://1drv.ms/u/s!AtfAgPR4VDcEscQXcKFf0eWUOejhqQ?e=j3LBex
 Steps to setup and test the algorithm:
 1. Download the dataset from the shared location
 2. Setup Elasticsearch server using reference from https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
-3. Exeute the code given in the Indexing folder to setup different indices from the downloaded dataset in Elasticsearch server
+3. Exeute the code given in the Indexing folder to setup different indices from the downloaded dataset in Elasticsearch server. 
+Or alternatively use elasticdump to replicate the indices and their structure from (https://1drv.ms/u/s!AtfAgPR4VDcEscRdZ495eYCUIH3s2A?e=hUn4T8).
 4. Build the plugin project separately using Gradle and set it up with Elasticsearch and restart the Elastic server.
 5. for a regular search, search it directly using Kibana Dev console. 
 for algorithm test purpose, use the files given in the Search Folder, that will search the given set of queries and store the results in CSV file.
