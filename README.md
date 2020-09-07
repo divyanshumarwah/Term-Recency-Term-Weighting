@@ -10,11 +10,11 @@ Indexing - Indexing folder has the files needed to index the dataset from the da
 
 Search Folder has the files neeeded to search the index and get the results in a csv file.
 
-results Folder has the files for the results fetched from the experiments done.
-
-evaluation folder has the files to compare th different set of results as per the precision and nDCG.
+evaluation folder has the files to compare different set of results as per precision and nDCG scores.
 
 dissertation latex-score- this has the latex source files for the disseratation.
+
+results Folder has the files for the results fetched from the experiments done.
 
 Research Paper - https://drive.google.com/file/d/1Cp8PsHjMHmldpuWH57L3s4IzF1T9TxbZ/view?usp=sharing
 
