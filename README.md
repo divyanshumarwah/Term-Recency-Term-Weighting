@@ -15,3 +15,7 @@ results Folder has the files for the results fetched from the experiments done.
 evaluation folder has the files to compare th different set of results as per the precision and nDCG.
 
 dissertation latex-score- this has the latex source files for the disseratation.
+
+Research Paper - https://drive.google.com/file/d/1Cp8PsHjMHmldpuWH57L3s4IzF1T9TxbZ/view?usp=sharing
+
+Thesis Report - https://drive.google.com/file/d/1Zxpp23mdfqiSt4Ou-izgLH6knIqhTlY_/view?usp=sharing
